@@ -1,4 +1,5 @@
 .btn {
+    display: inline-block;
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
@@ -11,12 +12,17 @@
             color: var(--clr-200);
         }
     }
-    &--solid-blue {
-        background: var(--gr-100);
-        color: var(--clr-700);
+    &--solid {
         transition: all .3s;
         &:hover {
             opacity: .9;
+        }
+        &-blue {
+            background: var(--gr-100);
+            color: var(--clr-700);
+        }
+        &-gold {
+            background: var(--gr-200);
         }
     }
 }

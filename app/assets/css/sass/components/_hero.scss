@@ -1,0 +1,45 @@
+.hero {
+    position: relative;
+    padding: 80px 0 0;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 365px;
+        background: url('../img/hero-gradient.png') center top / contain no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 20px;
+    }
+    &-main {
+        max-width: 534px;
+    }
+    &-btn {
+        font-size: 24px;
+    }
+    &-text {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 150%;
+        strong {
+            font-weight: 500;
+        }
+    }
+    &-btn {
+        margin-top: 48px;
+        line-height: 150%;
+    }
+    &-img {
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 590px;
+    }
+}
