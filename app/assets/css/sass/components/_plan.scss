@@ -1,0 +1,64 @@
+.plan {
+    &-wrap {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, min(100%, 488px));
+        justify-content: center;
+        column-gap: 20px;
+    }
+    &-item {
+        padding: 25px 30px 35px;
+        border-radius: 20px;
+        &--blue {
+            background: #E9F1FB;
+        }
+        &--gold {
+            background: #FFEFBE;
+        }
+        &-title {
+            img {
+                display: inline;
+                vertical-align: bottom;
+                margin-right: .8em;
+            }
+        }
+        &-prices {
+            margin-top: 20px;
+            display: flex;
+            column-gap: 36px;
+            align-items: flex-end;
+        }
+        &-current {
+            font-weight: 700;
+            font-size: 32px;
+        }
+        &-old {
+            font-weight: 400;
+            font-size: 24px;
+            s {
+                text-decoration-color: #ff0000;
+            }
+        }
+        &-body {
+            margin-top: 28px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 180%;
+            ul {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 26px;
+                    }
+                }
+            }
+        }
+        &-btn {
+            margin-top: 28px;
+            font-size: 20px;
+            padding: 23px 26px;
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+}
