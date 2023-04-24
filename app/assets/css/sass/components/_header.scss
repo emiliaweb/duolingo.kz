@@ -8,6 +8,9 @@
     &-wrap, &-top, &-bottom {
         justify-content: space-between;
     }
+    &-wrap {
+        column-gap: 20px;
+    }
     &-top {
 
     }
@@ -23,6 +26,9 @@
     }
     &-left {
         column-gap: 75px;
+        .btn {
+            text-align: center;
+        }
     }
     &-socials {
         column-gap: 30px;
@@ -57,7 +63,7 @@
     }
     &-nav {
         &-list {
-            column-gap: 45px;
+            column-gap: clamp(20px, 3vw, 45px);
             li, a {
                 font-weight: 400;
                 font-size: 16px;
@@ -69,6 +75,20 @@
                     color: var(--clr-200);
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1239px) {
+    .header {
+        &-left {
+            column-gap: 20px;
+        }
+        &-right {
+            max-width: 600px;
+        }
+        &-wrap {
+            column-gap: 50px;
         }
     }
 }

@@ -32,6 +32,9 @@
         strong {
             font-weight: 500;
         }
+        @media (max-width: 1239px) {
+            font-size: clamp(26px, 2.5vw, 30px);
+        }
     }
     &-btn {
         margin-top: 48px;
