@@ -1,6 +1,18 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+* {
+    font-family: var(--ff-100);
+    color: var(--clr-100);
+}
+
+// a:not([class]) {
+//     transition: all .3s;
+//     &:hover {
+//         color: var(--clr-200);
+//     }
+// }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

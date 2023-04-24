@@ -1,0 +1,22 @@
+.btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    padding: 15px 26px;
+    border-radius: 15px;
+    &--outline {
+        border: 1px solid var(--clr-200);
+        transition: all .3s;
+        &:hover {
+            color: var(--clr-200);
+        }
+    }
+    &--solid-blue {
+        background: var(--gr-100);
+        color: var(--clr-700);
+        transition: all .3s;
+        &:hover {
+            opacity: .9;
+        }
+    }
+}
