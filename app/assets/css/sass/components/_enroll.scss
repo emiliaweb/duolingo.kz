@@ -50,9 +50,9 @@
     &-img {
         padding-top: 24px;
         img {
-            max-width: 548px;
             max-height: 522px;
-            aspect-ratio: 1.06/1;
+            width: 100%;
+            // aspect-ratio: 1.06/1;
             border-radius: 15px;
             object-fit: cover;
         }
