@@ -38,6 +38,13 @@
     }
     &-socials {
         column-gap: 30px;
+        &-item {
+            font-weight: 400;
+            font-size: 16px;
+            img {
+                max-width: 25px
+            }
+        }
     }
     &-langs, &-nav-list{
         @include list-reset;
