@@ -1,6 +1,11 @@
 .header {
     background-color: var(--clr-700);
     padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     &-top, &-bottom, &-socials, &-wrap, &-left {
         display: flex;
         align-items: center;
