@@ -45,7 +45,7 @@ a {
 }
 
 /* Enable smooth scrolling */
-html:focus-within {
+html, html:focus-within {
     scroll-behavior: smooth;
 }
 
