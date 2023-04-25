@@ -1,0 +1,60 @@
+.enroll {
+    &-wrap {
+        background: #E9F1FB;
+        border-radius: 24px;
+        padding: 42px 68px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        align-items: center;
+    }
+    &-main {
+        max-width: 500px;
+    }
+    &-form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 25px;
+        button[type=submit] {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.15em;
+            min-width: 280px;
+            text-align: center;
+            padding-top: 23px;
+            padding-bottom: 23px;
+        }
+        label {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        input {
+            font-weight: 300;
+            font-size: 16px;
+            background: var(--clr-700);
+            border: 1px solid var(--clr-100);
+            border-radius: 16px;
+            padding: 15px 22px;
+            min-width: 426px;
+            &::placeholder {
+                color: #94A3B8;
+            }
+        }
+    }
+    &-img {
+        padding-top: 24px;
+        img {
+            max-width: 548px;
+            max-height: 522px;
+            aspect-ratio: 1.06/1;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+    }
+}
