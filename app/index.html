@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/css/home.min.css">
 </head>
@@ -274,5 +275,79 @@
         </div>
     </section>
 
+    <section class="reviews spacer-150">
+        <div class="container">
+            <h2 class="section-title">Успехи наших студентов</h2>
+            <div class="reviews-wrap">
+                <div class="swiper reviews-swiper" id="reviewsSwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide reviews-slide">
+                            <div class="reviews-item">
+                                <div class="reviews-item-img">
+                                    <img src="assets/img/reviews-item-1.png" alt="image">
+                                </div>
+                                <div class="reviews-item-main">
+                                    <h3 class="reviews-item-title">Алина</h3>
+                                    <div class="reviews-item-text">Учитесь при поддержке профессионалов. Вы получите структурированные знания, готовое портфолио и сможете пройти стажировку в крупной компании</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <div class="reviews-item">
+                                <div class="reviews-item-img">
+                                    <img src="assets/img/reviews-item-2.png" alt="image">
+                                </div>
+                                <div class="reviews-item-main">
+                                    <h3 class="reviews-item-title">Алина</h3>
+                                    <div class="reviews-item-text">Учитесь при поддержке профессионалов. Вы получите структурированные знания, готовое портфолио и сможете пройти стажировку в крупной компании</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <div class="reviews-item">
+                                <div class="reviews-item-img">
+                                    <img src="assets/img/reviews-item-1.png" alt="image">
+                                </div>
+                                <div class="reviews-item-main">
+                                    <h3 class="reviews-item-title">Алина</h3>
+                                    <div class="reviews-item-text">Учитесь при поддержке профессионалов. Вы получите структурированные знания, готовое портфолио и сможете пройти стажировку в крупной компании</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <div class="reviews-item">
+                                <div class="reviews-item-img">
+                                    <img src="assets/img/reviews-item-2.png" alt="image">
+                                </div>
+                                <div class="reviews-item-main">
+                                    <h3 class="reviews-item-title">Алина</h3>
+                                    <div class="reviews-item-text">Учитесь при поддержке профессионалов. Вы получите структурированные знания, готовое портфолио и сможете пройти стажировку в крупной компании</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-swiper-nav">
+                        <button class="reviews-swiper-prev">
+                            <svg width="93" height="9" viewBox="0 0 93 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646446 4.85355C0.451187 4.65829 0.451187 4.34171 0.646446 4.14645L3.82843 0.964466C4.02369 0.769204 4.34027 0.769204 4.53554 0.964466C4.7308 1.15973 4.7308 1.47631 4.53554 1.67157L1.70711 4.5L4.53554 7.32843C4.7308 7.52369 4.7308 7.84027 4.53554 8.03553C4.34027 8.2308 4.02369 8.2308 3.82843 8.03553L0.646446 4.85355ZM93 5H1V4H93V5Z" fill="#252726"/>
+                            </svg>
+                        </button>
+                        <div class="reviews-swiper-pagination"></div>
+                        <button class="reviews-swiper-next">
+                            <svg width="93" height="9" viewBox="0 0 93 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M92.3536 4.85355C92.5488 4.65829 92.5488 4.34171 92.3536 4.14645L89.1716 0.964466C88.9763 0.769204 88.6597 0.769204 88.4645 0.964466C88.2692 1.15973 88.2692 1.47631 88.4645 1.67157L91.2929 4.5L88.4645 7.32843C88.2692 7.52369 88.2692 7.84027 88.4645 8.03553C88.6597 8.2308 88.9763 8.2308 89.1716 8.03553L92.3536 4.85355ZM0 5H92V4H0V5Z" fill="#252726"/>
+                            </svg>                            
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/reviews.js"></script>
 </body>
 </html>
