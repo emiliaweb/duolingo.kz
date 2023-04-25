@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in | Duolingo.kz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/sign-in.min.css">
+</head>
+<body>
+    <div class="signin">
+        <div class="container">
+            <div class="signin-wrap">
+                <a href="#" class="signin-logo">
+                    <img src="assets/img/logo.svg" alt="Duolingo.kz">
+                </a>
+                <h1 class="signin-title">Войти</h1>
+                <form class="signin-form">
+                    <label class="signin-box">
+                        <span>Ваш e-mail</span>
+                        <div class="signin-input">
+                            <img src="assets/img/icons/mail.svg" alt="email" class="signin-input-icon">
+                            <input required name="email" type="email" placeholder="введите ваш e-mail">
+                        </div>
+                    </label>
+                    <label class="signin-box" id="password">
+                        <span>Пароль</span>
+                        <div class="signin-input">
+                            <img src="assets/img/icons/pw.svg" alt="email" class="signin-input-icon">
+                            <input required name="password" type="password" placeholder="введите ваш пароль">
+                            <button type="button" class="signin-input-btn">
+                                <img src="assets/img/icons/visibility.svg" alt="show password">
+                            </button>
+                        </div>
+                    </label>
+                    <label class="signin-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span>Я принимаю <a href="#">правила пользования платформой</a></span>
+                    </label>
+                    <button type="submit" class="btn btn--solid-blue">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/sign-in.js"></script>
+</body>
+</html>
