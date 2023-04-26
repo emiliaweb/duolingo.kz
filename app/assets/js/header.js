@@ -23,7 +23,9 @@ window.addEventListener('DOMContentLoaded', () => {
     
     if (window.innerWidth >= 1023) {
         document.body.style.paddingTop = header.scrollHeight + 'px';
+        document.documentElement.style.scrollPaddingTop = header.scrollHeight + 'px';
     } else {
         document.body.style.paddingTop = 60 + 'px';
+        document.documentElement.style.scrollPaddingTop = 60 + 'px';
     }
 });
