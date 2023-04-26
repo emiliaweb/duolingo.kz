@@ -107,3 +107,32 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .signin {
+        padding-top: 20px;
+        place-content: unset;
+        &-logo { 
+            img {
+                max-width: 112px;
+            }
+        }
+        &-title {
+            font-size: 24px;
+        }
+        &-box, &-checkbox, &-box input {
+            font-size: 12px;
+        }
+        &-box {
+            input {
+                min-width: calc(100vw - 40px);
+            }
+        }
+        &-form {
+            row-gap: 20px;
+            button[type=submit] {
+                margin-top: 25px;
+            }
+        }
+    }
+}
