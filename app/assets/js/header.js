@@ -19,6 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('header-nav--active');
     });
 
+    const header = document.querySelector('header.header');
+    
     if (window.innerWidth >= 1023) {
         document.body.style.paddingTop = header.scrollHeight + 'px';
     } else {
