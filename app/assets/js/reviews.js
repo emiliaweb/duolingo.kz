@@ -10,14 +10,25 @@ window.addEventListener('DOMContentLoaded', () => {
             bulletClass: 'reviews-swiper-bullet',
             bulletActiveClass: 'reviews-swiper-bullet--active',
         },
-        paginationClickable: true,
 
         // Navigation arrows
         navigation: {
             nextEl: '.reviews-swiper-next',
             prevEl: '.reviews-swiper-prev',
         },
-        slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 20,
+        breakpoints: {
+            1023: {
+                slidesPerView: 2,
+                grid: null,
+            },
+            320: {
+                grid: {
+                    slidesPerView: 1,
+                    rows: 2,
+                    fill: 'row'
+                }
+            }
+        }
     });
 });

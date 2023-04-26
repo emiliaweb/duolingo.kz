@@ -42,6 +42,7 @@
         &-img {
             -webkit-mask-image:url('../img/audience-item-mask.svg');
             mask-image: url('../img/audience-item-mask.svg');
+            mask-size: contain;
             img {
                 aspect-ratio: 1/1;
                 object-fit: cover;
@@ -56,6 +57,19 @@
             font-weight: 300;
             font-size: 16px;
             line-height: 180%;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .reviews {
+        &-item {
+            grid-template-columns: 1fr;
+            padding: 20px 18px;
+            &-img {
+                margin: 0 auto;
+                width: 100px;
+            }
         }
     }
 }
