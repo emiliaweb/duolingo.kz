@@ -69,6 +69,25 @@
             }
         }
     }
+    &-totop {
+        position: absolute;
+        top: -52px;
+        right: 20px;
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        &:hover {
+            svg {
+                pointer-events: none;
+                #circle {
+                    fill: var(--clr-200)
+                }
+            }
+        }
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 1239px) {
@@ -87,6 +106,7 @@
 
 @media (max-width: 940px) {
     .footer {
+        margin-top: 70px;
         &-wrap {
             flex-direction: column;
             row-gap: 50px;

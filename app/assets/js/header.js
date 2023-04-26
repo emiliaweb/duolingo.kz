@@ -18,4 +18,10 @@ window.addEventListener('DOMContentLoaded', () => {
         trigger.classList.toggle('header-trigger--active');
         nav.classList.toggle('header-nav--active');
     });
-})
+
+    if (window.innerWidth >= 1023) {
+        document.body.style.paddingTop = header.scrollHeight + 'px';
+    } else {
+        document.body.style.paddingTop = 60 + 'px';
+    }
+});
