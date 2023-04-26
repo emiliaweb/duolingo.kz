@@ -1,9 +1,11 @@
 ['DOMContentLoaded', 'resize'].forEach(event => {
     window.addEventListener(event, () => {
         const langs = document.querySelector('.header-langs');
+        const socials = document.querySelector('.header-socials');
         const nav = document.querySelector('.header-nav');
         if (window.innerWidth <= 1023) {
             nav.insertAdjacentElement('afterbegin', langs);
+            nav.insertAdjacentElement('beforeend', socials);
         }
     });
 })
