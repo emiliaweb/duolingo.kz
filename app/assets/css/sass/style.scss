@@ -43,3 +43,7 @@
     font-weight: 400;
     font-size: clamp(16px, 2vw, 24px);
 }
+
+.hidden {
+    display: none !important;
+}
