@@ -115,6 +115,9 @@
             padding: 30px 0 0;
             border-top: 1px solid var(--clr-300);
         }
+        &-bottom {
+            column-gap: 40px;
+        }
         &-trigger {
             display: block;
             width: 24px;
@@ -181,6 +184,14 @@
     .header {
         &-logo {
             max-width: 112px;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .header {
+        &-bottom {
+            column-gap: 20px;
         }
     }
 }
