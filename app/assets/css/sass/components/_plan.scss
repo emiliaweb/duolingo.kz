@@ -2,7 +2,7 @@
     &-wrap {
         margin-top: 50px;
         display: grid;
-        grid-template-columns: repeat(2, min(100%, 488px));
+        grid-template-columns: repeat(2, 488px);
         justify-content: center;
         column-gap: 20px;
     }
@@ -44,7 +44,7 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 180%;
-            ul {
+            ul, ol {
                 li {
                     &:not(:last-child) {
                         margin-bottom: 26px;
@@ -60,5 +60,62 @@
             text-align: center;
             font-weight: 500;
         }
+    }
+}
+
+@media (max-width: 1023px) {
+    .plan {
+        &-wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &-item {
+            padding: 20px 10px 30px;
+            &-title {
+                img {
+                    max-width: 30px;
+                }
+            }
+            &-prices {
+                margin-top: 10px;
+            }
+            &-current, &-old {
+                font-size: 24px;
+            }
+            &-body {
+                margin-top: 20px;
+                font-size: 16px;
+                ul, ol {
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+            &-btn {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .plan {
+        &-wrap {
+            grid-template-columns: 1fr;
+            row-gap: 25px;
+        }
+        &-item {
+            padding: 16px 20px;
+            &-prices {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            &-title, &-prices {
+                padding-left: 33px;
+            }
+        }
+        
     }
 }

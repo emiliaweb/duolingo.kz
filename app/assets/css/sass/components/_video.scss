@@ -6,7 +6,7 @@
     }
     &-title {
         font-weight: 400;
-        font-size: clamp(22px, 2.5vw, 32px);
+        font-size: clamp(16px, 2.5vw, 32px);
         line-height: 150%;
         text-align: center;
     }
@@ -14,5 +14,19 @@
         margin-top: 30px;
         width: 100%;
         border-radius: 20px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .video {
+        padding: 10px 0;
+        background-color: #FFFAE9;
+        border-radius: 24px;
+        &-inner {
+            padding: 0;
+        }
+        &-media {
+            margin-top: 10px;
+        }
     }
 }

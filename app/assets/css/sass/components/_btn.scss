@@ -7,6 +7,9 @@
     border-radius: 15px;
     border: 0;
     text-align: center;
+    // @media (max-width: 1023px) {
+    //     padding: 15px 26px;
+    // }
     &--outline {
         border: 1px solid var(--clr-200);
         transition: all .3s;

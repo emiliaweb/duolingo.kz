@@ -1,5 +1,5 @@
 .course {
-    background: url('../img/course-bg.png') center 100% / contain no-repeat;
+    background: url('../img/course-bg.png') center center / contain no-repeat;
     &-wrap {
         margin-top: 50px;
         display: grid;
@@ -42,5 +42,20 @@
         padding: 20px 50px;
         margin: 60px auto 0;
         max-width: 990px;
+    }
+}
+
+@media (max-width: 767px) {
+    .course {
+        background-image: url('../img/course-bg-mob.png');
+        &-wrap {
+            margin-top: 25px;
+            grid-template-columns: 1fr;
+            row-gap: 10px;
+        }
+        &-bonus {
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
     }
 }

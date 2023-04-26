@@ -10,16 +10,27 @@
     }
     &-item {
         display: grid;
-        grid-template-columns: clamp(120px, 10vw, 145px) 1fr;
+        grid-template-columns: clamp(90px, 10vw, 145px) 1fr;
         column-gap: 20px;
         align-items: center;
         &-img {
             -webkit-mask-image:url('../img/audience-item-mask.svg');
             mask-image: url('../img/audience-item-mask.svg');
+            mask-size: contain;
             img {
                 aspect-ratio: 1/1;
                 object-fit: cover;
             }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .audience {
+        &-grid {
+            margin-top: 25px;
+            grid-template-columns: 1fr;
+            row-gap: 20px;
         }
     }
 }
