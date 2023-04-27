@@ -6,4 +6,12 @@ window.addEventListener('DOMContentLoaded', () => {
         btn.querySelector('span').innerHTML = fileInput.files[0].name;
     });
 
+    const openNav = document.querySelector('[data-open-nav]');
+    const nav = document.querySelector('[data-nav]');
+
+    openNav.addEventListener('click', (e) => {
+        e.preventDefault();
+        openNav.classList.toggle('profile-trigger--active');
+        nav.classList.toggle('profile-nav--active');
+    })
 })

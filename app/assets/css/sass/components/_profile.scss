@@ -2,7 +2,7 @@
     padding: 100px 0;
     &-title {
         font-weight: 400;
-        font-size: 32px;
+        font-size: clamp(24px, 2.5vw, 32px);
         text-align: center;
     }
     &-container {
@@ -18,7 +18,7 @@
         @include list-reset;
         &-item {
             font-weight: 400;
-            font-size: 24px;
+            font-size: clamp(16px, 1.6vw, 24px);
             padding: 15px 10px;
             a {
                 font: inherit;
@@ -33,6 +33,91 @@
             &:not(:last-child) {
                 border-bottom: 1px solid var(--clr-300);
             }
+        }
+    }
+}
+
+@media (max-width: 1339px) {
+    .profile {
+        &-container {
+            grid-template-columns: 260px 1fr;
+            column-gap: 60px;
+        }
+    }
+}
+
+@media (max-width: 1239px) {
+    .profile {
+        &-container {
+            padding: 0 40px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .profile {
+        padding: 30px 0;
+        &-container {
+            padding: 0 20px;
+            grid-template-columns: 1fr;
+        }
+        &-nav {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            background-color: var(--clr-700);
+            z-index: 900;
+            height: 100%;
+            max-height: 100vh;
+            width: 80%;
+            padding-top: 60px;
+            border: 1px solid #D5D5D5;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            transition: all .5s;
+            &--active {
+                left: 0;
+            }
+        }
+        &-trigger {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 950;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            background: var(--clr-700);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+            border: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            .open {
+                display: block;
+            }
+            .close {
+                display: none;
+            }
+            &--active {
+                .open {
+                    display: none;
+                }
+                .close {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .profile {
+        &-container {
+            margin-top: 25px;
         }
     }
 }

@@ -13,7 +13,7 @@
     &-text {
         margin-top: 22px;
         font-weight: 300;
-        font-size: 16px;
+        font-size: clamp(14px, 1.5vw, 16px);
         line-height: 180%;
     }
     &-group {
@@ -89,6 +89,44 @@
             margin-top: 25px;
             display: flex;
             column-gap: 25px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .lecture {
+        &-group {
+            margin-top: 50px;
+        }
+        &-media {
+            margin-top: 20px;
+        }
+        &-text {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .lecture {
+        &-files {
+            column-gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &-file {
+            font-size: 14px;
+            column-gap: 5px;
+            &-link {
+                font-size: 12px;
+            }
+        }
+        &-form {
+            max-width: 100%;
+            &-group {
+                margin-top: 15px;
+                row-gap: 15px;
+                flex-direction: column;
+            }
         }
     }
 }
