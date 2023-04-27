@@ -35,6 +35,9 @@
             }
         }
     }
+    &-trigger {
+        display: none;
+    }
 }
 
 @media (max-width: 1339px) {
