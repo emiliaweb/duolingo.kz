@@ -61,6 +61,18 @@
         display: flex;
         column-gap: 10px;
     }
+    &-hw {
+        .btn {
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    &-notif {
+        .btn {
+            margin-top: 25px;
+            padding: 19px 37px;
+        }
+    }
     &-form {
         margin-top: 25px;
         &-textarea {
@@ -77,10 +89,6 @@
             margin-top: 25px;
             display: flex;
             column-gap: 25px;
-        }
-        .btn {
-            font-weight: 500;
-            font-size: 18px;
         }
     }
 }
