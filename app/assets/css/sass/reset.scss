@@ -53,6 +53,6 @@ button {
     cursor: pointer;
 }
 
-p/* :not(:last-child) */ {
+p:not(:last-child) {
     margin-bottom: 1em;
 }

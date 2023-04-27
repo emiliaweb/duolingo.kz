@@ -1,0 +1,86 @@
+.lecture {
+    &-title {
+        font-weight: 400;
+        font-size: 24px;
+    }
+    &-media {
+        margin-top: 32px;
+    }
+    &-video {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    &-text {
+        margin-top: 22px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 180%;
+    }
+    &-group {
+        margin-top: 90px;
+    }
+    &-files {
+        @include list-reset;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(220px, auto));
+        grid-auto-rows: auto;
+        column-gap: 50px;
+        row-gap: 40px;
+    }
+    &-file {
+        font-size: 16px;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 15px;
+        &-main {
+            padding-top: 5px;
+        }
+        &-title {
+            font-weight: 300;
+        }
+        &-link {
+            background: var(--gr-100);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-decoration: underline;
+        }
+        &-icon {
+            max-width: clamp(40px, 8vw, 80px);
+        }
+    }
+    &-warning {
+        margin-top: 20px;
+        background: var(--gr-100);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        display: flex;
+        column-gap: 10px;
+    }
+    &-form {
+        margin-top: 25px;
+        &-textarea {
+            width: 100%;
+            min-height: 164px;
+            padding: 10px;
+            border: 1px solid var(--clr-100);
+            border-radius: 10px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 180%;
+        }
+        &-group {
+            margin-top: 25px;
+            display: flex;
+            column-gap: 25px;
+        }
+        .btn {
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+}

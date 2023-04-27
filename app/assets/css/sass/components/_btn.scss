@@ -8,10 +8,29 @@
     border: 0;
     text-align: center;
     transition: all .2s;
+    cursor: pointer;
+    &--icon {
+        img {
+            display: inline;
+            vertical-align: middle;
+            margin-right: 13px;
+        }
+    }
     &--outline {
         border: 1px solid var(--clr-200);
+        background: transparent;
         &:hover {
             background-color: var(--clr-200);
+        }
+        &-blue {
+            font-weight: 500;
+            background: transparent;
+            border: 1px solid var(--clr-500);
+            background: var(--gr-100);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
         }
     }
     &--solid {
