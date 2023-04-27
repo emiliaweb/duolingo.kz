@@ -158,6 +158,10 @@
                 border: 1px solid #D5D5D5;
                 border-radius: 16px;
                 min-width: 426px;
+                transition: all .3s;
+                &:hover {
+                    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+                }
             }
             img {
                 margin-right: 14px;
