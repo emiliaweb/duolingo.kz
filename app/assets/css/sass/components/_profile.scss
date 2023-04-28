@@ -23,16 +23,20 @@
             a {
                 font: inherit;
             }
-            &--current {
-                background: var(--gr-100);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                text-fill-color: transparent;
+            &--current, &--current a {
+                color: var(--clr-600);
+                // background: var(--gr-100);
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
+                // background-clip: text;
+                // text-fill-color: transparent;
             }
             &:not(:last-child) {
                 border-bottom: 1px solid var(--clr-300);
             }
+        }
+        &-notif {
+            color: #FF0000;
         }
     }
     &-trigger {
