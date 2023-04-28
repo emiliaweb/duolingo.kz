@@ -1,0 +1,100 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 25px;
+    button[type=submit] {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.15em;
+        min-width: 280px;
+        text-align: center;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+    label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    input {
+        font-weight: 300;
+        font-size: 16px;
+        background: var(--clr-700);
+        border: 1px solid var(--clr-100);
+        border-radius: 16px;
+        padding: 15px 22px;
+        min-width: 426px;
+        &::placeholder {
+            color: #94A3B8;
+        }
+    }
+    &-message {
+        &-text {
+            font-weight: 400;
+            // font-size: 24px;
+        }
+        &-btn {
+            margin-top: 20px;
+            font-size: 20px;
+            min-width: 175px;
+            padding: 23px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .form {
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .form {
+        margin-top: 20px;
+        align-items: unset;
+        row-gap: 15px;
+        label {
+            font-size: 12px;
+        }
+        input {
+            min-width: 100%;
+            font-size: 12px;
+            padding: 11px 22px;
+        }
+        button[type=submit] {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        &-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-text {
+                text-align: center;
+            }
+            &-btn {
+                min-width: 280px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .form {
+        button[type=submit] {
+            min-width: auto;
+        }
+        &-message {
+            &-btn {
+                min-width: 100%;
+            }
+        }
+    }
+}

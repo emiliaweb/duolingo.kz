@@ -85,7 +85,7 @@
                 <div class="hero-main">
                     <h1 class="page-title">Хочешь сдать Duolingo English Test?</h1>
                     <div class="hero-text">С нашим видеокурсом по подготовке к тесту Дуолинго ты наберешь <strong>+120 баллов</strong> или даже <strong>больше!</strong></div>
-                    <a href="#enroll" class="btn btn--solid btn--solid-gold hero-btn">Записаться на курс</a>
+                    <a href="#enroll" class="btn btn--solid btn--solid-gold hero-btn" data-trigger>Записаться на курс</a>
                 </div>
                 <div class="hero-img">
                     <img src="assets/img/hero-img.jpg" alt="Woman studying">
@@ -218,7 +218,7 @@
                             <li>Доступ на 40 дней.</li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn--solid-blue plan-item-btn">Записаться на курс</a>
+                    <a href="#" class="btn btn--solid-blue plan-item-btn" data-trigger>Записаться на курс</a>
                 </div>
                 <div class="plan-item plan-item--gold">
                     <h3 class="text plan-item-title">
@@ -236,7 +236,7 @@
                             <li>Доступ на 60 дней.</li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn--solid-gold plan-item-btn">Записаться на курс</a>
+                    <a href="#" class="btn btn--solid-gold plan-item-btn" data-trigger>Записаться на курс</a>
                 </div>
             </div>
         </div>
@@ -247,7 +247,7 @@
             <div class="enroll-wrap">
                 <div class="enroll-main">
                     <h2 class="text enroll-title">Чтобы записаться на курс заполни форму и в ближайшее время мы с тобой свяжемся!</h2>
-                    <form class="enroll-form">
+                    <form class="enroll-form form">
                         <label>
                             <span>Ваше имя</span>
                             <input required name="name" type="text" placeholder="введите ваше имя">
@@ -262,9 +262,9 @@
                         </label>
                         <button type="submit" class="btn btn--solid-gold">Записаться на курс</button>
                     </form>
-                    <div class="enroll-message hidden">
-                        <div class="text enroll-message-text">Ваша заявка отправлена! <br> Мы свяжемся с Вами в ближайшее время.</div>
-                        <a href="#" class="btn btn--solid-gold enroll-message-btn">ок</a>
+                    <div class="form-message enroll-message hidden">
+                        <div class="text form-message-text">Ваша заявка отправлена! <br> Мы свяжемся с Вами в ближайшее время.</div>
+                        <a href="#" class="btn btn--solid-gold form-message-btn">ок</a>
                     </div>
                 </div>
                 <div class="enroll-img">
@@ -377,6 +377,33 @@
         </div>
     </section>
 
+    <div class="popup" data-popup>
+        <div class="popup-overlay" data-overlay>
+            <div class="popup-block">
+                <h2 class="text popup-title">Чтобы записаться на курс заполни форму и в ближайшее время мы с тобой свяжемся!</h2>
+                <form class="popup-form form">
+                    <label>
+                        <span>Ваше имя</span>
+                        <input required name="name" type="text" placeholder="введите ваше имя">
+                    </label>
+                    <label>
+                        <span>Ваш телефон</span>
+                        <input required name="tel" type="tel" placeholder="введите ваш телефон">
+                    </label>
+                    <label>
+                        <span>Ваш e-mail</span>
+                        <input required name="email" type="email" placeholder="введите ваш e-mail">
+                    </label>
+                    <button type="submit" class="btn btn--solid-gold">Отправить</button>
+                </form>
+                <div class="form-message popup-message hidden">
+                    <div class="text form-message-text">Ваша заявка отправлена! <br> Мы свяжемся с Вами в ближайшее время.</div>
+                    <a href="#" class="btn btn--solid-gold form-message-btn">ок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer spacer-100">
         <button class="footer-totop">
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -452,5 +479,6 @@
     <script src="assets/js/reviews.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/header.js"></script>
+    <script src="assets/js/popup.js"></script>
 </body>
 </html>
