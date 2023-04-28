@@ -7,6 +7,16 @@
             nav.insertAdjacentElement('afterbegin', langs);
             nav.insertAdjacentElement('beforeend', socials);
         }
+
+        const header = document.querySelector('header.header');
+    
+        if (window.innerWidth >= 1023) {
+            document.body.style.paddingTop = header.scrollHeight + 'px';
+            document.documentElement.style.scrollPaddingTop = header.scrollHeight + 'px';
+        } else {
+            document.body.style.paddingTop = 60 + 'px';
+            document.documentElement.style.scrollPaddingTop = 60 + 'px';
+        }
     });
 })
 
@@ -18,14 +28,4 @@ window.addEventListener('DOMContentLoaded', () => {
         trigger.classList.toggle('header-trigger--active');
         nav.classList.toggle('header-nav--active');
     });
-
-    const header = document.querySelector('header.header');
-    
-    if (window.innerWidth >= 1023) {
-        document.body.style.paddingTop = header.scrollHeight + 'px';
-        document.documentElement.style.scrollPaddingTop = header.scrollHeight + 'px';
-    } else {
-        document.body.style.paddingTop = 60 + 'px';
-        document.documentElement.style.scrollPaddingTop = 60 + 'px';
-    }
 });
