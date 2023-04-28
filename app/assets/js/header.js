@@ -11,11 +11,13 @@
         const header = document.querySelector('header.header');
     
         if (window.innerWidth >= 1023) {
-            document.body.style.paddingTop = header.scrollHeight + 'px';
-            document.documentElement.style.scrollPaddingTop = header.scrollHeight + 'px';
+            const height = header.scrollHeight + 'px';
+            document.body.style.paddingTop = height;
+            document.documentElement.style.scrollPaddingTop = height;
         } else {
-            document.body.style.paddingTop = 60 + 'px';
-            document.documentElement.style.scrollPaddingTop = 60 + 'px';
+            const height = 60 + 'px';
+            document.body.style.paddingTop = height;
+            document.documentElement.style.scrollPaddingTop = height;
         }
     });
 })
