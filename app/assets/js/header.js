@@ -24,8 +24,22 @@ window.addEventListener('DOMContentLoaded', () => {
     const trigger = document.querySelector('.header-trigger');
     const nav = document.querySelector('.header-nav');
 
-    trigger.addEventListener('click', () => {
+    function toggleNav() {
         trigger.classList.toggle('header-trigger--active');
         nav.classList.toggle('header-nav--active');
+    }
+
+    trigger.addEventListener('click', () => {
+        toggleNav();
     });
+
+    if (window.innerWidth <= 1023) {
+        const navItems = document.querySelectorAll('.header-nav-list li a');
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                toggleNav();
+            });
+        });
+    }
 });
